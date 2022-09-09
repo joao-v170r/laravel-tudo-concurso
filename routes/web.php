@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CardsNoticeController;
+use App\Http\Controllers\NewsApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/Noticias', [CardsNoticeController::class, 'index']);
+Route::get('/Noticias/Save', [CardsNoticeController::class, 'store']);
+
+
+Route::get('/Noticas', [NewsApiController::class, 'index']);
+Route::get('/Noticas/Fontes', [NewsApiController::class, 'fontesNoticias']);
