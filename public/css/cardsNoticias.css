@@ -1,0 +1,57 @@
+
+.bodyCN {
+
+    background-color: #000000;
+
+} 
+
+.headerCN {
+
+    background-color: #FFFFFF;
+
+}
+
+.headTC {
+    padding-bottom: 5% ;
+    padding-left: 15px;
+}
+
+.imgTCLogo {
+    display: inline-block;
+    width: 8% ;
+
+}
+
+.imgIconesTC {
+    display: inline-block;
+    width: 1%;
+    margin: 3px;
+}
+
+.iconesTextos {
+    display: inline-block;
+    color: #AEACAC;
+   
+    
+}
+
+
+.tituloPrincipal {
+    width: 40px;
+    padding-top: 30px;
+
+}
+
+.TiltuloTC {
+
+    display: block;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.iconePerfil {
+
+    display: inline-block;
+         
+
+}

@@ -19,9 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Noticias', [CardsNoticeController::class, 'index']);
-Route::get('/Noticias/Save', [CardsNoticeController::class, 'store']);
+Route::get('/noticias', [CardsNoticeController::class, 'index']);
+Route::get('/noticias/save', [CardsNoticeController::class, 'store']);
 
-
-Route::get('/Noticas', [NewsApiController::class, 'index']);
-Route::get('/Noticas/Fontes', [NewsApiController::class, 'fontesNoticias']);
+Route::get('/infor-noticas', [NewsApiController::class, 'index']);
+Route::get('/infor-noticas/fontes', [NewsApiController::class, 'fontesNoticias']);

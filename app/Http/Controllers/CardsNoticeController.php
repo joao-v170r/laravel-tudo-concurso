@@ -20,9 +20,9 @@ class CardsNoticeController extends Controller
 
     public function index(Request $request)
     {
-        $noticias = CardsNotice::query()->get();
+        #$noticias = CardsNotice::query()->get();
 
-        return $noticias;
+        return view('cardsNoticias.index');
     }
 
     public function store(Request $request)
