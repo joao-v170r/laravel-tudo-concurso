@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CardsNoticeController;
 use App\Http\Controllers\NewsApiController;
+use App\Http\Controllers\ConcursoController;
+use App\Http\Controllers\NoticiaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +18,16 @@ use App\Http\Controllers\NewsApiController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('noticias.index'));
 });
 
-Route::get('/noticias', [CardsNoticeController::class, 'index']);
-Route::get('/noticias/save', [CardsNoticeController::class, 'store']);
+#Route::get('/concursos', ConcursoController::class, 'index')->name('noticias.index');
+#Route::get('concurso/{id}', ConcursoController::class, 'detailing')->name('noticias.detailing');
+
+Route::get('/noticias', [NoticiaController::class, 'index'])->name('noticias.index');
+Route::get('/noticias/salvar', [NoticiaController::class, 'store'])->name('noticias.store');
 
 Route::get('/infor-noticas', [NewsApiController::class, 'index']);
 Route::get('/infor-noticas/fontes', [NewsApiController::class, 'fontesNoticias']);
+
+Route::get('/concurso/criar', [ConcursoController::class, 'create'])->name('concurso.create');

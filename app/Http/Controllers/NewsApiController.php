@@ -9,11 +9,11 @@ use App\Facades\ApiNews;
 
 class NewsApiController extends Controller
 {   
-    private string $conteudo = "concurso";
+    private static string $conteudo = "concurso";
 
-    private string $linguagem = "pt";
+    private  static string $linguagem = "pt";
 
-    private string $pais = "br";
+    private  static string $pais = "br";
 
     public function index()
     {
@@ -22,14 +22,24 @@ class NewsApiController extends Controller
 
     public function fontesNoticias()
     {
-        $fontsNews = [];
+        $fontesNoticias = self::getFontesNoticias();        
 
-        $newsapiFontes = ApiNews::get('top-headlines/sources', ['q' => $this->conteudo, 'language' => $this->linguagem,'country' => $this->pais])->json();
-        
+        return view('news-api.fonte')->with('fontesApi', $fontesNoticias);
+    }
+
+    public static function getFontesNoticias()
+    {
+        /**
+         * @var array $fontsNews
+         */
+        $fontsNews;
+
+        $newsapiFontes = ApiNews::get('top-headlines/sources', ['q' => self::$conteudo, 'language' => self::$linguagem,'country' => self::$pais])->json();
+
         if($newsapiFontes['status'] == 'ok'){
             $fontsNews = $newsapiFontes['sources'];
         }
 
-        return view('NewsApi.fonte')->with('fontesApi', $fontsNews);
+        return $fontsNews;
     }
 }

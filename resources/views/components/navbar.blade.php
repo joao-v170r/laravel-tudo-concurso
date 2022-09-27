@@ -1,7 +1,6 @@
-<nav class="navbar p-3 nav-background-color">
-    <div class="container-fluid">
+<nav class="navbar p-3 navbar-expand-lg nav-background-color">
+    <div class="container-fluid ">
         <a class="navbar-brand" href="">
-        <h3 class="display-5 title-netflix">
             <span class="rounded float-start">
                 <svg width="150" height="90" viewBox="0 0 202 128" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="13" width="202" height="115" rx="5" fill="#F57B0A"/>
@@ -21,9 +20,25 @@
                         </filter>
                     </defs>
                 </svg>                    
-            </span>
-            <small class="text-white">{{ $tituloPagina }}</small>
-        </h3>
+            </span>  
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tudo Concurso Noticias</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="fechar"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <li class="nav-item display-6">
+                        <a class="nav-link  d-flex" aria-current="page" href="{{ route('noticias.index') }}">
+                            Minhas Noticias
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
