@@ -1,64 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# laravel-tudo-concurso
+
+<img src="https://skitter-vicuna-79a.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F818aa518-716b-4256-abcd-91665581a37b%2FTudoConcurso.svg?table=block&id=0e62a307-f68e-4abf-813a-d9a675f2e0e3&spaceId=be289399-f714-4c0c-bf5b-8fa722abe7f9&userId=&cache=v2">
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<a href="https://skitter-vicuna-79a.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F818aa518-716b-4256-abcd-91665581a37b%2FTudoConcurso.svg?table=block&id=0e62a307-f68e-4abf-813a-d9a675f2e0e3&spaceId=be289399-f714-4c0c-bf5b-8fa722abe7f9&userId=&cache=v2"></a>
+  
+## Sobre o projeto
 
-## About Laravel
+Trata de um site para auxiliar concurseiros a ficarem atualizados sobre os seus concursos e encontrarem concursos abertos ou próximos da abertura que sejam compatíveis com o perfil de concurso que o usuário deseja participar.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Preparação do ambiente 
+<code>
+  
+    composer -v 
+    #version 2.3.10
+    php -v
+    #version 8.1.8
+    node -v
+    #v16.17.0
+    npm -v
+    #8.15.0
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+    git clone https://github.com/joao-v170r/laravel-series-alura
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+    composer install
+    #caso de erro tente composer install --ignore-platform-reqs
 
-## Learning Laravel
+    php artisan serve
+    #inicia o servidor padrão localhost:8000
+  
+</code>
+  
+## Ferramentas  utilizadas no projeto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<table>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+  <td>
+    
+    Git e Github      Controle de Versão
+  
+    Azure Dev Ops     Documentação
+ 
+    VsCode            Editor de Código
+  
+    Bootstrap v5.2    Framework CSS
+  
+    Laravel v9        Framework Back-end
+  
+    Blade             Framework Front-end
+    
+  </td>
 
-## Laravel Sponsors
+</table>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## O por que da Linguagem ?
 
-### Premium Partners
+A linguagem escolhida foi PHP pelar excelente portabilidade nela na web e como e ela tem uma excelente integração com o HTML e CSS e JAVASCRIPT é MYSQL, com o Framework Full Stack Laravel  a integração entre os componentes ficou ainda mais fácil, utilizando o sistema MVC e POO programação orientada a objeto o sistema ficara completo. No fronte utilizarem o Blade uma extensão nativa do laravel para front-end. Mais adiante no projeto o laravel sera utilizado somente como back-end como uma web API e para front utilizaremos o React pela sua reatividade e utilização no mercado atual a sim como o laravel.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## API utilizadas no projeto
 
-## Contributing
+Noticias: NewsApi, TwitterApi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Padrões utilizados no projeto
 
-## Code of Conduct
+### Padrão de rotas
+ 
+<table>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+  <td>
+  
+    GET        /photos                  index       photos.index
+  
+    GET        /photos/crate            create      photos.create
+  
+    POST       /photos/{photo}          store       photos.store
 
-## Security Vulnerabilities
+    GET        /photos/{photo}          show        photos.show
+  
+    GET        /photos/{photo}/edit     edit        photos.edit
+  
+    PUT/PATCH  /photos/{photo}          update      photos.update
+  
+    DELETE     /photos/{photo}          destroy     photos.destroy
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+  </td>
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+</table>
