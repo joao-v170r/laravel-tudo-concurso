@@ -1,24 +1,26 @@
-
 .bodyCN {
-
+    padding: 0%;
     background-color: #000000;
-
+    margin: 0%;
 } 
 
 .headerCN {
-
+    display: inline-block;
     background-color: #FFFFFF;
-
+    padding-right: 78%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 
 .headTC {
     padding-bottom: 5% ;
     padding-left: 15px;
+    display: inline-block;
 }
 
 .imgTCLogo {
     display: inline-block;
-    width: 8% ;
+    width: 30% ;
 
 }
 
@@ -39,7 +41,7 @@
 .tituloPrincipal {
     width: 40px;
     padding-top: 30px;
-
+    display: inline-block;
 }
 
 .TiltuloTC {
@@ -52,6 +54,41 @@
 .iconePerfil {
 
     display: inline-block;
-         
+      
 
+}
+.imagenADireita{
+
+    display: inline-block; 
+    width: 20%; 
+    padding-left: 70%;
+}
+
+.tituloDescricao{
+    display: inline-block;
+    color:#FFFFFF; 
+    margin: 34px;
+    vertical-align: top;
+    width: 100%;
+ 
+}
+.paragrafoDescricao {
+    padding-top: 0%;
+    width: 50%; 
+    font-size: x-large; 
+    display:inline-block ;
+    color: #FFFFFF;
+    margin-left: 34px;
+}
+
+.subtituloDescricao{
+
+    color: #FFFFFF;
+    
+}
+.itenListaDescricao{
+
+    font-size: x-large;
+    margin-left: 20px;
+    color: #FFFFFF;
 }
