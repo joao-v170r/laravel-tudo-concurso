@@ -13,12 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('concursos', function (Blueprint $table) {
+        Schema::create('tcn_perfils', function (Blueprint $table) {
             $table->id();
-            $table->string('no_nome',300);
-            $table->set('st_status_concurso',['autorizados', 'abertos', 'inscrições abertas','fechados']);
-            $table->string('sg_siglas_estado', 2);
-            $table->foreignId('banca_id');
+            $table->string('no_nome_perfil');
+            $table->string('ds_descricao_perfil');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('concursos');
+        Schema::dropIfExists('tcn_perfils');
     }
 };

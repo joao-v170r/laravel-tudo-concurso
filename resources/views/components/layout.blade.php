@@ -7,10 +7,14 @@
     <meta title="description" content="Um site para auxiliar concurseiros a ficarem atualizados sobre os seus concursos e encontrarem concursos abertos ou próximos da abertura que sejam compatíveis com o perfil de concurso que o usuário deseja participar.">
     <title>TCN - {{ ucfirst($tituloPagina) }}</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"><!-- Importa o CSS do Laravel do bootstrap-->
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
 <body>    
 <header>
-    <x-navbar tituloPagina={{ $tituloPagina }} />
+    <x-navbar tituloPagina={{ $tituloPagina }} />  
+    <div class="p-3">
+        <h1 class="display-1 titleTCN">{{ $tituloPagina }}</h1>  
+    </div>
 </header>
 <main class="bg-dark text-white">
     <section class="container-fluid">

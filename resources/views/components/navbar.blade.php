@@ -1,4 +1,4 @@
-<nav class="navbar p-3 navbar-expand-lg nav-background-color">
+<nav class="navbar p-2 navbar-expand-lg nav-background-color">
     <div class="container-fluid ">
         <a class="navbar-brand" href="">
             <span class="rounded float-start">

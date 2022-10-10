@@ -26,6 +26,7 @@ Route::get('/', function () {
 
 Route::get('/noticias', [NoticiaController::class, 'index'])->name('noticias.index');
 Route::get('/noticias/salvar', [NoticiaController::class, 'store'])->name('noticias.store');
+Route::get('/noticias/{id}/descricao', [NoticiaController::class, 'description'])->name('noticias.descricao');
 
 Route::get('/infor-noticas', [NewsApiController::class, 'index']);
 Route::get('/infor-noticas/fontes', [NewsApiController::class, 'fontesNoticias']);
