@@ -10,6 +10,10 @@
 
 }
 
+.decoration-none{
+    text-decoration: none;
+}
+
 .headerCN {
     display: inline-block;
     background-color: #FFFFFF;
@@ -39,10 +43,13 @@
 .iconesTextos {
     display: inline-block;
     color: #AEACAC;
-   
     
 }
 
+.card-image{
+    width: 400px!important;
+    height: 200px!important;
+}
 
 .tituloPrincipal {
     width: 40px;
